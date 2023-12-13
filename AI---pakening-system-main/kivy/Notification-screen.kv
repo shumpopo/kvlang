@@ -1,0 +1,20 @@
+MDScreen:
+    name: "Notification-screen"
+
+    MDFloatLayout:
+        MDIconButton:
+            icon: "chevron-left"
+            pos_hint: {'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Home-screen"
+        Image:
+            source: "assets/TCUlogo.jpg"
+            size_hint: 1, 1
+            pos_hint: {'center_x': 0.5,'center_y': .5}
+            opacity: 0.5
+        MDLabel:
+            text: "N O T I F I C A T I O N"
+            font_name: "fonts/Poppins.otf"
+            font_size: "18sp"
+            pos_hint: {"center_x": .65, "center_y": .95}

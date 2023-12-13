@@ -1,0 +1,371 @@
+MDScreen:
+    name: 'About'
+    MDFloatLayout:
+        MDLabel:
+            text: "Developers"
+            font_name: "fonts/OpenSans-Bold.ttf"
+            font_size: "18sp"
+            halign: "center"
+            pos_hint: {"center_y": .95}
+
+    MDIconButton:
+        icon: "chevron-left"
+        pos_hint: {'center_y': 0.95}
+        on_release:
+            root.manager.transition.direction = "right"
+            root.manager.current = "Setting-screen"
+
+    ScrollView:
+        size_hint_y: .9
+        do_scroll_x: False
+        do_scroll_y: True
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            size: (root.width, root.height)
+            width: self.minimum_width
+            size_hint: None, None
+            cols: 1
+            spacing : 5
+            MDFloatLayout:
+                size_hint: 1,.01
+            MDBoxLayout:
+                orientation: "vertical"
+                pos_hint: {"center_x": 0.5,"center_y": 1}
+                size_hint: .9,.13
+
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 0.65
+                    BoxShadow:
+                        pos: self.pos
+                        size: self.size
+                        offset: 0, -5
+                        blur_radius: 25
+                        spread_radius: -10, -10
+                        border_radius: 10, 10, 10, 10
+                canvas:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [20]
+
+                MDFloatLayout:
+                    MDLabel:
+                        text: "Halasan, Merjery M."
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "15sp"
+                        pos_hint: {"center_x": .93, "center_y": .70}
+
+                    MDLabel:
+                        text: "UI / UX"
+                        font_name: "fonts/little.otf"
+                        font_size: "14sp"
+                        pos_hint: {"center_x": .95, "center_y": .5}
+
+                    MDLabel:
+                        text: '"If you dont take risks,\nyou can’t create a future"'
+                        font_name: "fonts/OpenSans-Italic.ttf"
+                        font_size: "10sp"
+                        pos_hint: {"center_x": .95, "center_y": .30}
+                        opacity: .5
+
+                MDBoxLayout:
+                    size_hint_y:.2
+                    md_bg_color:1, 0, 0, 1
+                    radius: [0,0,10,10]
+
+                    MDFloatLayout:
+                        MDIconButton:
+                            icon: "facebook"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.5, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/merjery.halasan')
+
+                        MDIconButton:
+                            icon: "facebook-messenger"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.7, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/messages/t/100003392659714')
+
+                        MDIconButton:
+                            icon: "gmail"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.9, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHHfTxQfFwzXdBLsGnxlBwGjLHbMNVSMjVpDlmkZsCgXHsmCCPKxCgXXGrDcMmPFfWXV')
+
+                    MDFloatLayout:
+                        canvas:
+                            Color:
+                                rgb: 1, 1, 1
+                            Ellipse:
+                                pos: 50, 670
+                                size: 80,80
+                                source: 'assets/merjery.jpg'
+                                angle_start: 0
+                                angle_end: 360
+
+            MDBoxLayout:
+                orientation: "vertical"
+                pos_hint: {"center_x": 0.5,"center_y": 1}
+                size_hint: .9,.13
+
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 0.65
+                    BoxShadow:
+                        pos: self.pos
+                        size: self.size
+                        offset: 0, -5
+                        blur_radius: 25
+                        spread_radius: -10, -10
+                        border_radius: 10, 10, 10, 10
+                canvas:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [20]
+
+                MDFloatLayout:
+                    MDLabel:
+                        text: "Jabanag, Immanuel\n  Erick C."
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "15sp"
+                        pos_hint: {"center_x": .93, "center_y": .7}
+
+                    MDLabel:
+                        text: "UI / UX"
+                        font_name: "fonts/little.otf"
+                        font_size: "14sp"
+                        pos_hint: {"center_x": .95, "center_y": .45}
+
+                    MDLabel:
+                        text: '"Di ka aangat, kung hindi ka\nmanghihila pababa"'
+                        font_name: "fonts/OpenSans-Italic.ttf"
+                        font_size: "10sp"
+                        pos_hint: {"center_x": .95, "center_y": .30}
+                        opacity: .5
+
+                MDBoxLayout:
+                    size_hint_y:.2
+                    md_bg_color:1, 0, 0, 1
+                    radius: [0,0,10,10]
+
+                    MDFloatLayout:
+                        MDIconButton:
+                            icon: "facebook"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.5, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/profile.php?id=100092284681936')
+
+                        MDIconButton:
+                            icon: "facebook-messenger"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.7, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/messages/t/100092284681936')
+
+                        MDIconButton:
+                            icon: "gmail"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.9, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfprrXDSgjhDxscVhxqRBqfznbWDNWjTSVrfzfhLvfJrqfmhclJThtnkZcztcBsqZdqxxV/immancantor@gmail.com')
+
+
+                    MDFloatLayout:
+                        canvas:
+                            Color:
+                                rgb: 1, 1, 1
+                            Ellipse:
+                                pos: 50,465
+                                size: 80,80
+                                source: 'assets/erik.jpg'
+                                angle_start: 0
+                                angle_end: 360
+
+            MDBoxLayout:
+                orientation: "vertical"
+                pos_hint: {"center_x": 0.5,"center_y": 1}
+                size_hint: .9,.13
+
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 0.65
+                    BoxShadow:
+                        pos: self.pos
+                        size: self.size
+                        offset: 0, -5
+                        blur_radius: 25
+                        spread_radius: -10, -10
+                        border_radius: 10, 10, 10, 10
+                canvas:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [20]
+
+                MDFloatLayout:
+                    MDLabel:
+                        text: "Espares, Terence E."
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "15sp"
+                        pos_hint: {"center_x": .93, "center_y": .70}
+
+                    MDLabel:
+                        text: "PROGRAMMER"
+                        font_name: "fonts/little.otf"
+                        font_size: "14sp"
+                        pos_hint: {"center_x": .95, "center_y": .5}
+
+                    MDLabel:
+                        text: '"The System Uses Me,\n      and I Use the System."'
+                        font_name: "fonts/OpenSans-Italic.ttf"
+                        font_size: "10sp"
+                        pos_hint: {"center_x": .95, "center_y": .30}
+                        opacity: .5
+
+
+
+                MDBoxLayout:
+                    size_hint_y:.2
+                    md_bg_color:1, 0, 0, 1
+                    radius: [0,0,10,10]
+
+                    MDFloatLayout:
+                        MDIconButton:
+                            icon: "facebook"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.5, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/Teecute22')
+
+                        MDIconButton:
+                            icon: "facebook-messenger"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.7, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/messages/t/100046186998995')
+
+                        MDIconButton:
+                            icon: "gmail"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.9, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfprrXDSgjhDxscVhxqRBqfznbWDNWjTSVrfzfhLvfJrqfmhclJThtnkZcztcBsqZdqxxV')
+
+                    MDFloatLayout:
+                        canvas:
+                            Color:
+                                rgb: 1, 1, 1
+                            Ellipse:
+                                pos: 50, 270
+                                size: 80,80
+                                source: 'assets/terence.jpg'
+                                angle_start: 0
+                                angle_end: 360
+
+            MDBoxLayout:
+                orientation: "vertical"
+                pos_hint: {"center_x": 0.5,"center_y": 1}
+                size_hint: .9,.13
+
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 0.65
+                    BoxShadow:
+                        pos: self.pos
+                        size: self.size
+                        offset: 0, -5
+                        blur_radius: 25
+                        spread_radius: -10, -10
+                        border_radius: 10, 10, 10, 10
+                canvas:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [20]
+
+                MDFloatLayout:
+                    MDLabel:
+                        text: "Silos, Miguel Angel C."
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "15sp"
+                        pos_hint: {"center_x": .93, "center_y": .70}
+
+                    MDLabel:
+                        text: "PROGRAMMER"
+                        font_name: "fonts/little.otf"
+                        font_size: "14sp"
+                        pos_hint: {"center_x": .95, "center_y": .5}
+
+                    MDLabel:
+                        text: '"When it’s done, it’s done."'
+                        font_name: "fonts/OpenSans-Italic.ttf"
+                        font_size: "10sp"
+                        pos_hint: {"center_x": .95, "center_y": .30}
+                        opacity: .5
+
+                MDBoxLayout:
+                    size_hint_y:.2
+                    md_bg_color:1, 0, 0, 1
+                    radius: [0,0,10,10]
+
+                    MDFloatLayout:
+                        MDIconButton:
+                            icon: "facebook"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.5, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/M1G0L')
+
+                        MDIconButton:
+                            icon: "facebook-messenger"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.7, "center_y": .5}
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://web.facebook.com/messages/t/100055845943717')
+
+                        MDIconButton:
+                            icon: "gmail"
+                            icon_size: dp(20)
+                            pos_hint: {"center_x": 1.9, "center_y": .5}
+
+                            on_press:
+                                import webbrowser
+                                webbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfprrXDSgjhDxscVhxqRBqfznbWDNWjTSVrfzfhLvfJrqfmhclJThtnkZcztcBsqZdqxxV')
+
+                    MDFloatLayout:
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        canvas:
+                            Color:
+                                rgb: 1, 1, 1
+                            Ellipse:
+                                pos: 50, 75
+                                size: 80,80
+                                source: 'assets/miguel.jpg'
+                                angle_start: 0
+                                angle_end: 360

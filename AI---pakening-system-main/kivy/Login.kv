@@ -1,0 +1,112 @@
+MDScreen:
+    name: "Login"
+
+    MDFloatLayout:
+        MDLabel:
+            text: "L O G I N "
+            font_name: "fonts/Poppins.otf"
+            font_size: "30sp"
+            pos_hint: {"center_x": .6, "center_y": .85}
+
+        MDLabel:
+            text: "Sign in your account ."
+            font_name: "fonts/PoppinsEL.otf"
+            font_size: "14sp"
+            pos_hint: {"center_x": .6, "center_y": .79}
+            color: rgba(1, 1, 1, 1)
+
+        MDFloatLayout:
+            md_bg_color: 0/255, 0/255, 0/255, 0
+            Image:
+                source: "assets/TCUlogo.jpg"
+                size_hint: 0.5, 0.5
+                pos_hint: {'center_x': 0.5,'center_y': 0.65}
+
+            MDLabel:
+                text: "Artificial Intelligence"
+                font_name: "fonts/PoppinsEL.otf"
+                font_size: "10sp"
+                pos_hint: {"center_y": .5}
+                halign: "center"
+
+        MDFloatLayout:
+            size_hint: .75, .07
+            pos_hint: {"center_x": .5, "center_y": .35}
+            MDTextField:
+                id: email
+                icon_left: "email"
+                hint_text: "Email"
+                font_name: "fonts/OpenSans-Semibold.ttf"
+                pos_hint: {'center_x': .5,'center_y': 0.27}
+                font_size: "14sp"
+                cursor_width: "2sp"
+                multiline: False
+
+        MDFloatLayout:
+            size_hint: .75, .07
+            pos_hint: {"center_x": .5, "center_y": .275}
+            MDTextField:
+                id: password
+                icon_left: "lock"
+                hint_text: "Password"
+                font_name: "fonts/OpenSans-Semibold.ttf"
+                pos_hint: {'center_x': .5,'center_y': 0.15}
+                background_color: 1, 1, 1, 0
+                font_size: "14sp"
+                cursor_width: "2sp"
+                multiline: False
+                password: True
+
+
+        Button:
+            text: "Login"
+            size_hint: .5, .06
+            pos_hint: {"center_x": .5, "center_y": .15}
+            background_color: 0, 0, 0, 0
+            font_name: "fonts/OpenSans-Bold.ttf"
+            on_release:
+                app.user_login(email.text, password.text)
+                root.manager.transition.direction = "left"
+            canvas.before:
+                Color:
+                    rgb: rgba(255, 0, 0, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [20]
+
+        MDTextButton:
+            text: "Forgot password?"
+            pos_hint: {"center_x": .5, "center_y": .1}
+            font_name: "fonts/OpenSans-Bold.ttf"
+            font_size: "12sp"
+            color: rgba(135, 135, 135, 255)
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "forgot_password"
+
+
+        MDBoxLayout:
+            Carousel:
+                size_hint: .5, .08
+                pos_hint: {"center_y": .95}
+                MDFloatLayout:
+                    size_hint_x: 1
+
+                MDFloatLayout:
+                    size_hint_x: .3
+                    pos_hint: {"center_x": .9}
+
+                    MDIconButton:
+                        icon: "cog-outline"
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                        on_release:
+                            root.manager.transition.direction = "left"
+                            root.manager.current = "Admin_login"
+
+        MDIconButton:
+            icon: "account-plus"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.05}
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Register"

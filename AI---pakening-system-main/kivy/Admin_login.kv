@@ -1,0 +1,74 @@
+MDScreen:
+    name: "Admin_login"
+    MDFloatLayout:
+        md_bg_color: 0/255, 0/255, 0/255, 0
+        MDIconButton:
+            icon: "chevron-left"
+            pos_hint: {'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Login"
+
+        MDLabel:
+            text: "A D M I N "
+            font_name: "fonts/Poppins.otf"
+            font_size: "30sp"
+            pos_hint: {"center_x": .6, "center_y": .85}
+
+        MDFloatLayout:
+            md_bg_color: 0/255, 0/255, 0/255, 0
+            Image:
+                source: "assets/TCUlogo.jpg"
+                size_hint: 0.5, 0.5
+                pos_hint: {'center_x': 0.5,'center_y': 0.65}
+
+            MDLabel:
+                text: "Artificial Intelligence"
+                font_name: "fonts/PoppinsEL.otf"
+                font_size: "10sp"
+                pos_hint: {"center_y": .5}
+                halign: "center"
+
+        MDFloatLayout:
+            size_hint: .75, .07
+            pos_hint: {"center_x": .5, "center_y": .35}
+            MDTextField:
+                id: admin_id
+                icon_left: "email"
+                hint_text: "Admin ID"
+                font_name: "fonts/OpenSans-Semibold.ttf"
+                pos_hint: {'center_x': .5,'center_y': 0.27}
+                font_size: "14sp"
+                cursor_width: "2sp"
+                multiline: False
+
+        MDFloatLayout:
+            size_hint: .75, .07
+            pos_hint: {"center_x": .5, "center_y": .275}
+            MDTextField:
+                id: admin_password
+                icon_left: "lock"
+                hint_text: "Password"
+                font_name: "fonts/OpenSans-Semibold.ttf"
+                pos_hint: {'center_x': .5,'center_y': 0.15}
+                background_color: 1, 1, 1, 0
+                font_size: "14sp"
+                cursor_width: "2sp"
+                multiline: False
+                password: True
+
+        Button:
+            text: "Login"
+            size_hint: .5, .06
+            pos_hint: {"center_x": .5, "center_y": .15}
+            background_color: 0, 0, 0, 0
+            font_name: "fonts/OpenSans-Bold.ttf"
+            on_release:
+                app.admin_login(admin_id.text, admin_password.text)
+            canvas.before:
+                Color:
+                    rgb: rgba(255, 0, 0, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [20]

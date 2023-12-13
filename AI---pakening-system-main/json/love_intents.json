@@ -1,0 +1,439 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hi"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["My pleasure", "You're Welcome"],
+         "context": [""]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me Saviour.", "I'm Saviour!", "I'm Saviour, here to help you!"],
+         "context_set": ""
+        },
+        {"tag": "crucial",
+         "patterns": ["I want to kill", "i want to suicide", " i have a depression", "i want to die", "dead"],
+         "responses": ["This is a crucial topic! please contact TCU counseling office for the guidance dial #8635-8300"],
+         "context": [""]
+        },
+       {"tag": "broken",
+         "patterns": ["doesn`t love me","didn’t love me","didn`t have feelings for me.","didn`t feel love for me.","didn`t love me."],
+         "responses": ["I understand. It is very painful to learn that a partner no longer loves you. It is important to allow yourself time to grieve and to process your emotions. There is no right or wrong way to feel, and it is normal to experience a range of emotions, such as sadness, anger, confusion, and loneliness."],
+         "context": [""]
+        },
+       {"tag": "broken2",
+         "patterns": ["doesn`t care about me", "doesn`t show concern for me", "indifferent to me"],
+         "responses": ["It is very difficult to be in a relationship with someone who doesn`t care about you. You may feel lonely,unloved, and unsupported. It is important to remember that you deserve to be with someone who cares about you and makes you feel loved and valued."],
+         "context": [""]
+        },
+      {"tag": "broken3",
+         "patterns": ["broke up", "break up", "after the break up,", "ended the relationship", "following our break up"],
+         "responses": ["I understand. I am sorry to hear that you broke up with your partner. It is important to remember that you are not alone. Millions of people go through breakups every year. It is a normal and natural part of life.Breakups can be very difficult, but they can also be an opportunity for growth and self-discovery. As you heal from this breakup, focus on taking care of yourself and learning from your experiences."],
+         "context": [""]
+        },
+      {"tag": "broken4",
+         "patterns": ["handle break up,", "manage break up"],
+         "responses": ["Yes, I believe you are capable of handling this breakup. You have already shown strength and resilience by acknowledging your feelings and by reaching out for support. This is a positive sign that you are ready to heal and move on."],
+         "context": [""]
+        },
+      {"tag": "broken6",
+         "patterns": ["Cheated", "Cheat", "Cheating"],
+         "responses": ["I am so sorry to hear that you experienced to get cheated on. This is a very painful betrayal, and it is normal to feel a range of emotions, such as anger, sadness, confusion, and betrayal."],
+         "context": [""]
+      },
+      {"tag": "broken7",
+         "patterns": ["She Cheated", "He Cheated", "got cheated on"],
+         "responses": ["Don't try to bottle them up or pretend that you`re not hurting. It's important to acknowledge your feelings and to allow yourself to grieve."],
+         "context": [""]
+      },
+      {"tag": "broken8",
+         "patterns": ["She`s cheating", "He`s cheating"],
+         "responses": ["If you have been cheated on, it is important to remember that you are not alone. Cheating is a reflection of the cheater, not of you. You deserve to be with someone who loves and respects you."],
+         "context": [""]
+      },
+      {"tag": "broken9",
+         "patterns": ["Why did my partner cheat", "Why is my partner cheating"],
+         "responses": ["People's motivations for cheating can vary widely, and understanding the specific reasons behind your partner's actions would require open communication between you two."],
+         "context": [""]
+      },
+      {"tag": "broken10",
+         "patterns": ["having an affair", "affair", "betrayed"],
+         "responses": ["Before confronting your partner, you may want to gather any evidence you have of the infidelity. This can include messages, photos, or other proof that might help in the conversation."],
+         "context": [""]
+      },
+      {"tag": "broken11",
+         "patterns": ["third party"],
+         "responses": ["Think about what you want for your future. Do you want to work through the issues with your partner, or is it time to end the relationship? Consider your own well-being and what will be best for you in the long run."],
+         "context": [""]
+      },
+      {"tag": "broken12",
+         "patterns": ["can`t fight for me"],
+         "responses": ["There are a few possible reasons why your partner may love you but not be willing to fight for you. One possibility is that they are afraid of commitment. They may not be ready to settle down or to take the next step in the relationship. Another possibility is that they are insecure. They may not feel good enough for you or they may be afraid of being rejected. It is also possible that they are simply not happy in the relationship. They may have fallen out of love or they may have realized that you are not compatible."],
+         "context": [""]
+      },
+      {"tag": "broken13",
+         "patterns": ["i`m not enough", "not enough"],
+         "responses": ["You are enough. I`m here to assist you with any questions or requests you may have. Whether it's seeking information, support, or just someone to talk to, I'm here to help. Everyone has moments of self-doubt, but it's important to remember that you are valuable and worthy just as you are. If there's anything specific you'd like to discuss or any way I can support you, please feel free to let me know."],
+         "context": [""]
+      },
+      {"tag": "broken14",
+         "patterns": ["left me"],
+         "responses": ["It's natural to feel hurt and confused when someone leaves, but it's important to remember that their decision is not a reflection of your worth. People leave relationships for various reasons, often unrelated to the person they are leaving. It's essential to focus on self-care and surround yourself with supportive people during this challenging time. Remember that you are valuable and worthy just as you are. If you need support or guidance, don't hesitate to reach out to friends, family, or a professional for help. You are not alone, and you deserve understanding and compassion."],
+         "context": [""]
+      },
+      {"tag": "broken15",
+         "patterns": ["she / he left me"],
+         "responses": ["It's natural to feel hurt and confused when someone leaves, but it's important to remember that their decision is not a reflection of your worth. People leave relationships for various reasons, often unrelated to the person they are leaving. It's essential to focus on self-care and surround yourself with supportive people during this challenging time. Remember that you are valuable and worthy just as you are. If you need support or guidance, don't hesitate to reach out to friends, family, or a professional for help. You are not alone, and you deserve understanding and compassion."],
+         "context": [""]
+      },
+      {"tag": "broken16",
+         "patterns": ["he", "she", "hurt me", "emotionally hurt"],
+         "responses": ["I'm sorry to hear that you're going through a difficult time. It's important to remember that I'm just a computer program and not equipped to provide personal advice or counselling. However, if you're dealing with a situation where someone is hurting you, whether it's emotionally or physically, it's crucial to prioritize your well-being."],
+         "context": [""]
+      },
+      {"tag": "broken17",
+         "patterns": ["hurting me", "emotionally hurting"],
+         "responses": ["Understanding why someone may be causing you harm can be complex and may involve various factors such as their own struggles, communication issues, or personal issues. It's essential to prioritize your safety and seek support from friends, family, or professionals who can help you navigate the situation."],
+         "context": [""]
+      },
+      {"tag": "broken18",
+         "patterns": ["replaced me", "replace me"],
+         "responses": ["Acceptance is a crucial part of the healing process. Understand that you cannot control the actions of your ex-partner, but you can control your own reactions and choices moving forward."],
+         "context": [""]
+      },
+      {"tag": "broken19",
+         "patterns": ["doesnt want me anymore", "doesnt love me anymore"],
+         "responses": ["now. It's tough when someone you love doesn't love you back anymore. There are many reasons why someone might not feel the same way about you, and it's important to remember that it's not always your fault."],
+         "context": [""]
+      },
+      {"tag": "broken20",
+         "patterns": ["feel replaceable"],
+         "responses": ["Everyone is unique and valuable in their own way, and that includes you. No one can ever replace you. You have your own special talents, skills, and qualities that make you special.However, it's understandable to feel like you might be replaceable, especially if you're going through a tough time or feeling insecure. But remember, your worth is not determined by others. You are worthy of love and respect, just as you are."],
+         "context": [""]
+      },
+        {"tag": "admiration",
+         "patterns": ["crush"],
+         "responses": ["Be genuine and authentic. Don't try to be someone you're not just to impress your crush. Authenticity is attractive"],
+         "context": [""]
+      },
+        {"tag": "admiration2",
+         "patterns": ["admire","admired"],
+         "responses": ["Express your admiration sincerely. Be true to your feelings and avoid exaggeration"],
+         "context": [""]
+      },
+        {"tag": "admiration3",
+         "patterns": ["admiring"],
+         "responses": ["Offer genuine compliments. Be specific about what you admire in the person, whether it's their skills, character, or achievements."],
+         "context": [""]
+      },
+        {"tag": "admiration4",
+         "patterns": ["like", "liked"],
+         "responses": ["Take the time to learn about the person you like. Discover their interests, values, and what makes them unique."],
+         "context": [""]
+        },
+        {"tag": "admiration5",
+         "patterns": ["liking"],
+         "responses": ["Find opportunities to start conversations. Ask open-ended questions and actively listen to what they have to say."],
+         "context": [""]
+        },
+        {"tag": "admiration6",
+         "patterns": ["attract", "attracted"],
+         "responses": ["Take a moment to reflect on why you are attracted to this person. Understanding your own feelings can help you approach the situation with more clarity."],
+         "context": [""]
+        },
+        {"tag": "admiration7",
+         "patterns": ["attraction"],
+         "responses": ["Pay attention to the person's body language and verbal cues. This can give you insights into their feelings and level of comfort."],
+         "context": [""]
+        },
+        {"tag": "in love",
+         "patterns": ["in love"],
+         "responses": ["Take the time to reflect on your feelings and understand what it is you love about this person. Knowing your own emotions can guide your actions."],
+         "context": [""]
+        },
+        {"tag": "in love2",
+         "patterns": ["inlove"],
+         "responses": ["Communicate openly and honestly with the person you love. Share your thoughts, feelings, and aspirations, and encourage them to do the same."],
+         "context": [""]
+        },
+        {"tag": "in love3",
+         "patterns": ["court"],
+         "responses": ["Take the time to genuinely understand the person you're interested in. Learn about their interests, values, and life goals."],
+         "context": [""]
+        },
+        {"tag": "in love4",
+         "patterns": ["woo"],
+         "responses": ["Embrace chivalrous gestures that demonstrate thoughtfulness and respect. This could include opening doors, pulling out chairs, offering your coat, or just do everything to make that person happy."],
+         "context": [""]
+        },
+        {"tag": "pursuing",
+         "patterns": ["pursue me", "pursuing me"],
+         "responses": ["Be open about your feelings and expectations. If you're not interested, gently let them know. If you're unsure, be honest about it."],
+         "context": [""]
+        },
+        {"tag": "pursuing2",
+         "patterns": ["persuading me"],
+         "responses": [" Don't feel rushed into anything. Take the time you need to understand your own feelings and intentions."],
+         "context": [""]
+        },
+        {"tag": "rejection",
+         "patterns": ["rejected me"],
+         "responses": ["Remember that rejection often says more about the other person's preferences or circumstances than it does about you. Try not to internalize the rejection as a reflection of your value."],
+         "context": [""]
+        },
+        {"tag": "rejection2",
+         "patterns": ["reject me"],
+         "responses": [" Take some time to reflect on the situation. Consider what you've learned from the experience and how you can grow from it."],
+         "context": [""]
+        },
+        {"tag": "rejection3",
+         "patterns": ["rejects me"],
+         "responses": ["Be kind to yourself. Rejection is a universal experience, and everyone goes through it at some point. Treat yourself with the same kindness and understanding that you would offer a friend."],
+         "context": [""]
+        },
+        {"tag": "rejection4",
+         "patterns": ["rejection"],
+         "responses": ["Keep a positive outlook on the future. Rejection is a setback, but it doesn't determine your entire journey. Focus on your goals and the aspects of your life that bring you joy."],
+         "context": [""]
+        },
+        {"tag": "rejection5",
+         "patterns": ["reject him", "reject her", "rejecting"],
+         "responses": ["When communicating your feelings, be honest and straightforward. Clearly express that you are not interested in pursuing a romantic relationship. Ambiguity can lead to misunderstandings, so it's crucial to be direct."],
+         "context": [""]
+        },
+        {"tag": "rejection6",
+         "patterns": ["rejected him", "rejected her"],
+         "responses": ["Acknowledge any positive aspects of your interactions or the person's qualities. This helps soften the impact of the rejection and shows that you appreciate them as an individual."],
+         "context": [""]
+        },
+  {"tag": "paalam",
+         "patterns": ["Paalam", "Kitakits mamaya", "Goodbye", "Maganda ang usapan natin, paalam", "Hanggang sa susunod na pagkakataon."],
+         "responses": ["Kitakits!", "Magandang araw!", "Paalam! Balik ka sana ulit."],
+         "context": [""]
+        },
+        {"tag": "salamat",
+         "patterns": ["Salamat", "Salamat sa lahat", "Nakakatulong pala", "Astig, Salamat", "Salamat sa tulong mo"],
+         "responses": ["Walang problema", "Walang anuman"],
+         "context": [""]
+        },
+        {"tag": "pangalan",
+         "patterns": ["Ano ang pangalan mo", "Ano ang itatawag ko sa'yo", "Ano pangalan mo?"],
+         "responses": ["Maaari mo akong tawaging Saviour.", "Ako si Saviour!", "Ako si Saviour, nandito para tulungan ka!"],
+         "context_set": ""
+        },
+        {"tag": "kritikal",
+         "patterns": ["Gusto ko makapatay", "Gusto ko magpakamatay", " Mayroon akong depresyon", "Gusto ko mamatay", "mamatay"],
+         "responses": ["Mahalagang paksa ito! Maaaring makipag-ugnay sa TCU counseling office para sa gabay, tawagan ang #8635-8300"],
+         "context": [""]
+        },
+       {"tag": "wasak",
+         "patterns": ["hindi na ako mahal","di na nya ako mahal","walang nararamdaman para sa akin","walang nararamdaman na pag-ibig para sa akin..","di nya ko mahal."],
+         "responses": ["Naiintindihan ko. Napakasakit malaman na hindi ka na iniibig ng iyong kasama. Mahalaga na bigyan mo ang iyong sarili ng oras para magluksa at isaayos ang iyong mga emosyon. Walang tamang o maling paraan ng pag-ramdam, at normal na maranasan ang iba't ibang damdamin tulad ng lungkot, galit, paguluhan, at pangungulila."],
+         "context": [""]
+        },
+       {"tag": "wasak2",
+         "patterns": ["walang pake sa akin", "hindi siya nag-aalala sa akin", "walang pakialam sa akin"],
+         "responses": ["Mahirap talaga ang pag nasa isang relasyon sa isang taong walang pakialam sa iyo. Maaari kang makaramdam ng lungkot, hindi iniibig, at walang suporta. Mahalaga na tandaan mo na karapat-dapat ka na maging kasama ng isang taong nagmamalasakit sa iyo at nagpaparamdam sa iyo ng pagmamahal at pagpapahalaga.ed and valued."],
+         "context": [""]
+        },
+      {"tag": "wasak3",
+         "patterns": ["naghiwalay", "nag-break", "matapos ang paghihiwalay,", "tapos na ang relasyon", "pagkatapos ng ating paghihiwalay"],
+         "responses": ["Naiintindihan ko. Pasensya na at naririnig kong naghiwalay kayo ng iyong kasama. Mahalaga na tandaan mong hindi ka nag-iisa. Ang milyon-milyong tao ay dumadaan sa mga paghihiwalay taun-taon. Ito ay isang normal at natural na bahagi ng buhay. Ang mga paghihiwalay ay maaaring maging napakahirap, ngunit maaari rin itong pagkakataon para sa pag-unlad at pagkilala sa sarili. Habang gumagaling ka mula sa paghihiwalay na ito, itunguhing mag-alaga sa sarili at magkaruon ng mga aral mula sa iyong mga karanasan."],
+         "context": [""]
+        },
+      {"tag": "wasak4",
+         "patterns": ["ihandle ang paghihiwalay,", "manage break up"],
+         "responses": ["Oo, naniniwala ako na kaya mong pamahalaan ang paghihiwalay na ito. Ipinaabot mo na ang lakas at matibay na paninindigan sa pagtanggap ng iyong nararamdaman at sa pagsusumikap na humingi ng suporta. Ito ay isang positibong palatandaan na handa ka nang maghilom at magpatuloy sa buhay."],
+         "context": [""]
+        },
+      {"tag": "wasak6",
+         "patterns": ["niloko", "nangaliwa", "panlilinlang"],
+         "responses": ["Ito ay napakasakit na marinig na naexperience mo ang pangangaliwa. Ito ay isang masakit na pagtatraydor, at normal ang maramdaman ang iba't ibang damdamin tulad ng galit, lungkot, pagkalito, at pagtatraydor."],
+         "context": [""]
+      },
+      {"tag": "wasak7",
+         "patterns": ["nangaliwa siya", "niloko ka niya", "Niloko"],
+         "responses": ["Huwag mong subukang itago o magkunwari na hindi ka nasasaktan. Mahalaga na aminin ang iyong mga nararamdaman at bigyan ang iyong sarili ng pagkakataon na magluksa."],
+         "context": [""]
+      },
+      {"tag": "wasak8",
+         "patterns": ["Nangangaliwa siya", "Niloloko ka niya"],
+         "responses": ["Kung niloko ka, mahalaga na tandaan mong hindi ka nag-iisa. Ang pangangaliwa ay nagpapakita ng ugali ng nagloko, hindi sa iyo. Karapat-dapat ka na maging kasama ng isang taong nagmamahal at nagbibigay respeto sa iyo."],
+         "context": [""]
+      },
+      {"tag": "wasak9",
+         "patterns": ["Bakit nangaliwa ang aking partner", "bakit nagloko saken ang partner ko"],
+         "responses": ["Ang mga dahilan kung bakit nagloko ang isang tao ay maaaring iba-iba at kadalasang kailangan ng masusing usapan para maunawaan ito. Mahalaga ang malalim na pag-uusap na naglalaman ng mga nararamdaman at saloobin upang mabigyan ng linaw ang sitwasyon at mahanap ang mga posibleng solusyon."],
+         "context": [""]
+      },
+      {"tag": "wasak10",
+         "patterns": ["may relasyon sa labas", "affair", "nabiktima"],
+         "responses": ["Bago confrontahin ang iyong partner, mag gather ka muna ng kahit anong evidence para may proof ka na tapat ang iyong sinasabi. This can include messages, photos, or other proof that might help in the conversation."],
+         "context": [""]
+      },
+      {"tag": "wasak11",
+         "patterns": ["third party"],
+         "responses": ["Think about what you want for your future. Do you want to work through the issues with your partner, or is it time to end the relationship? Consider your own well-being and what will be best for you in the long run."],
+         "context": [""]
+      },
+      {"tag": "wasak12",
+         "patterns": ["di nya ako kayang ipaglaban"],
+         "responses": ["May ilang posibleng dahilan kung bakit mahal ka ng iyong kasama ngunit hindi handa na makipaglaban para sa iyo. Isa sa mga posibilidad ay ang takot sa pangangal Commitment. Baka hindi pa sila handa na mag-settle down o kumuha ng susunod na hakbang sa relasyon. Isa pang posibilidad ay ang kanilang kawalan ng kumpiyansa. Maaaring hindi nila nararamdaman na sapat sila para sa iyo o baka natatakot silang ma-reject. Maari ding sila ay hindi masaya sa relasyon. Baka sila ay nawalan na ng pag-ibig o napagtanto na hindi kayo magkasundo."],
+         "context": [""]
+      },
+      {"tag": "wasak13",
+         "patterns": ["hindi pa ba ako sapat", "kulang pa ba"],
+         "responses": ["You are enough. Narito ako para tulungan ka sa anumang tanong o kahilingan na maaaring mo pangalangan. Mula sa paghahanap ng impormasyon, suporta, o simpleng pakikipag-usap, narito ako para mag-assist. Lahat tayo ay may mga sandaling nagdududa sa sarili, ngunit mahalaga tandaan mong may halaga at karapat-dapat ka kahit ano pa man. Kung may partikular kang nais pag-usapan o kahit anong paraan na maaari kitang suportahan, huwag mag-atubiling sabihin sa akin."],
+         "context": [""]
+      },
+      {"tag": "wasak14",
+         "patterns": ["iniwan nya ako"],
+         "responses": ["Natural ang maramdaman ang sakit at kalituhan kapag iniwan ka ng isang tao, ngunit mahalaga na tandaan mong ang kanilang desisyon ay hindi isang repleksiyon ng iyong halaga. Ang mga tao ay umaalis sa mga relasyon dahil sa iba't ibang dahilan, kadalasang hindi konektado sa taong iniwan. Mahalaga na mag-focus sa pangangalaga sa sarili at paligidin ang sarili ng mga taong sumusuporta sa panahong ito ng pagsubok. Tandaan mong may halaga at karapat-dapat ka kahit ano pa man. Kung kailangan mo ng suporta o gabay, huwag mag-atubiling humingi ng tulong mula sa mga kaibigan, pamilya, o propesyunal. Hindi ka nag-iisa, at nararapat ka sa pag-unawa at pag-ibig."],
+         "context": [""]
+      },
+      {"tag": "wasak15",
+         "patterns": ["Iwan niya ako / Iniwan niya ako"],
+         "responses": ["Natural na maramdaman ang sakit at kalituhan kapag iniwan ng isang tao, ngunit mahalagang tandaan na ang kanilang desisyon ay hindi isang tumpak na salamin ng iyong halaga. Maraming rason kung bakit iniwan ng mga tao ang isang relasyon, kadalasang hindi konektado sa taong iniwan. Mahalaga na magtuon ng pansin sa pangangalaga sa sarili at paligiran ang sarili ng mga taong sumusuporta sa panahong ito ng pagsubok. Tandaan mong mahalaga at karapat-dapat ka kahit ano pa man. Kung kailangan mo ng suporta o gabay, huwag kang mag-atubiling humingi ng tulong sa mga kaibigan, pamilya, o propesyunal. Hindi ka nag-iisa, at nararapat kang magkaroon ng pang-unawa at pagmamahal."],
+         "context": [""]
+      },
+      {"tag": "wasak16",
+         "patterns": ["he", "she", "sinaktan niya ako", "emotionally hurt"],
+         "responses": ["Nakakalungkot isipin na dumadaan ka sa isang mahirap na yugto. Mahalaga ang tandaan na ako ay isang computer program lamang at hindi handa na magbigay ng personal na payo o counseling. Gayunpaman, kung nakakaranas ka ng sitwasyon kung saan mayroong nagdudulot sa iyo ng sakit, maging ito man emosyonal o pisikal, mahalaga na bigyan mo ng prayoridad ang iyong kalusugan at kaligtasan."],
+         "context": [""]
+      },
+      {"tag": "wasak17",
+         "patterns": ["sinasaktan nya ako", "emosyonal na sinasaktan"],
+         "responses": ["Ang pag-unawa kung bakit mayroong nagdudulot sa iyo ng pinsala ay maaaring magulo at maaaring may kinalaman sa iba't ibang mga bagay tulad ng kanilang mga personal na laban, mga isyu sa pakikipag-usap, o personal na mga suliranin. Mahalaga na bigyang prayoridad mo ang iyong kaligtasan at humingi ng suporta mula sa mga kaibigan, pamilya, o mga propesyonal na maaaring makatulong sa iyo sa pagsosolusyon ng sitwasyon."],
+         "context": [""]
+      },
+      {"tag": "wasak18",
+         "patterns": ["pinalitan nya ako", "replace me"],
+         "responses": ["Ang pagtanggap ay isang mahalagang bahagi ng proseso ng paghilom. Maunawaan mong hindi mo kontrolado ang mga aksyon ng iyong dating kasama, ngunit kontrolado mo ang iyong sariling mga reaksyon at mga desisyon sa hinaharap."],
+         "context": [""]
+      },
+      {"tag": "wasak19",
+         "patterns": ["ayaw na nya saken", "di na nya ako mahal"],
+         "responses": ["Ngayon. Mahirap kapag ang isang taong iyong iniibig ay hindi ka na iniibig pabalik. May maraming dahilan kung bakit maaaring hindi nararamdaman ng isang tao ang parehong paraan tungkol sa iyo, at mahalaga na tandaan na hindi laging kasalanan mo.."],
+         "context": [""]
+      },
+      {"tag": "wasak20",
+         "patterns": ["feeling ko kapalit palit"],
+         "responses": ["Lahat ay natatangi at mahalaga sa kanilang sariling paraan, at kasama ka doon. Walang makakapalit sayo. Mayroon kang sariling mga espesyal na talento, kasanayan, at mga katangian na nagpapahayag ng iyong kahalagahan. Gayunpaman, maunawaan na normal ang pakiramdam na maaaring mapalitan, lalo na kung dumadaan ka sa mahirap na yugto o mayroong insecurity. Ngunit tandaan, ang iyong halaga ay hindi nasusukat ng iba. Karapat-dapat ka sa pagmamahal at respeto, kahit anuman ang iyong nararamdaman."],
+         "context": [""]
+      },
+        {"tag": "paghanga",
+         "patterns": ["crush"],
+         "responses": ["Maging totoo at tunay. Huwag mong subukang maging ibang tao para lamang impresyunin ang iyong gusto. Ang pagiging tunay ay nakakatangi."],
+         "context": [""]
+      },
+        {"tag": "paghanga2",
+         "patterns": ["paghanga","iniidolo"],
+         "responses": ["Ipadama mo ang iyong paghanga nang tapat. Maging tapat sa iyong nararamdaman at iwasan ang sobra-sobrang pagsasalaysay."],
+         "context": [""]
+      },
+        {"tag": "paghanga3",
+         "patterns": ["hinahanga"],
+         "responses": ["Magbigay ng tapat na papuri. Maging tiyak sa mga bagay na hinahangaan mo sa tao, maging ito man ang kanilang kasanayan, karakter, o mga tagumpay."],
+         "context": [""]
+      },
+        {"tag": "paghanga4",
+         "patterns": ["gusto", "gusto kita"],
+         "responses": ["Take the time to learn about the person you like. Discover their interests, values, and what makes them unique."],
+         "context": [""]
+        },
+        {"tag": "paghanga5",
+         "patterns": ["pagkagusto"],
+         "responses": ["Maghanap ng pagkakataon upang simulan na ang paguusap. Magtanong ng mga bukas na tanong at aktibong makinig sa kung ano ang kanilang sasabihin."],
+         "context": [""]
+        },
+        {"tag": "paghanga6",
+         "patterns": ["attract", "attracted"],
+         "responses": ["Take a moment to reflect on why you are attracted to this person. Understanding your own feelings can help you approach the situation with more clarity."],
+         "context": [""]
+        },
+        {"tag": "paghanga7",
+         "patterns": ["attraction"],
+         "responses": ["Bigyang pansin ang body language at verbal cues ng tao. Ito ay maaaring magbigay sa iyo ng mga pananaw sa kanilang mga damdamin at antas ng kaginhawaan."],
+         "context": [""]
+        },
+        {"tag": "in love",
+         "patterns": ["in love"],
+         "responses": ["Maglaan ng oras upang suriin ang iyong mga nararamdaman at maunawaan kung ano ang iyong iniibig sa taong ito. Ang pagkakaroon ng kaalaman sa iyong sariling emosyon ay maaaring gabayan ang iyong mga hakbang."],
+         "context": [""]
+        },
+        {"tag": "in love2",
+         "patterns": ["inlove"],
+         "responses": ["Communicate openly and honestly with the person you love. Share your thoughts, feelings, and aspirations, and encourage them to do the same."],
+         "context": [""]
+        },
+        {"tag": "in love3",
+         "patterns": ["ligaw"],
+         "responses": ["Take the time to genuinely understand the person you're interested in. Learn about their interests, values, and life goals."],
+         "context": [""]
+        },
+        {"tag": "in love4",
+         "patterns": ["woo"],
+         "responses": ["Embrace chivalrous gestures that demonstrate thoughtfulness and respect. This could include opening doors, pulling out chairs, offering your coat, or just do everything to make that person happy."],
+         "context": [""]
+        },
+        {"tag": "kumbinsihin",
+         "patterns": ["ligawan mo ko", "pursuing me"],
+         "responses": ["Maging bukas ukol sa iyong nararamdaman at mga inaasahan. Kung wala kang interes, maayos na ipaalam sa kanila. Kung hindi ka sigurado, maging tapat tungkol dito."],
+         "context": [""]
+        },
+        {"tag": "kumbinsihin2",
+         "patterns": ["kumbinsihin mo ako"],
+         "responses": ["Huwag kang magmadali sa anuman. Kunin ang oras na kailangan mo upang maunawaan ang iyong sariling nararamdaman at layunin."],
+         "context": [""]
+        },
+        {"tag": "rejection",
+         "patterns": ["tinanggihan nya ako"],
+         "responses": ["Tandaan na ang pagtanggi madalas na nagsasalita hinggil sa mga nais o kalagayan ng ibang tao kaysa sa iyong sarili. Subukan mong huwag ituring ang pagtanggi bilang isang pagpapakita ng iyong halaga."],
+         "context": [""]
+        },
+        {"tag": "rejection2",
+         "patterns": ["reject me"],
+         "responses": [" Take some time to reflect on the situation. Consider what you've learned from the experience and how you can grow from it."],
+         "context": [""]
+        },
+        {"tag": "rejection3",
+         "patterns": ["rejects me"],
+         "responses": ["Be kind to yourself. Rejection is a universal experience, and everyone goes through it at some point. Treat yourself with the same kindness and understanding that you would offer a friend."],
+         "context": [""]
+        },
+        {"tag": "rejection4",
+         "patterns": ["rejection"],
+         "responses": ["Keep a positive outlook on the future. Rejection is a setback, but it doesn't determine your entire journey. Focus on your goals and the aspects of your life that bring you joy."],
+         "context": [""]
+        },
+        {"tag": "rejection5",
+         "patterns": ["reject him", "reject her", "rejecting"],
+         "responses": ["When communicating your feelings, be honest and straightforward. Clearly express that you are not interested in pursuing a romantic relationship. Ambiguity can lead to misunderstandings, so it's crucial to be direct."],
+         "context": [""]
+        },
+        {
+         "tag": "rejection6",
+         "patterns": ["rejected him", "rejected her"],
+         "responses": ["Acknowledge any positive aspects of your interactions or the person's qualities. This helps soften the impact of the rejection and shows that you appreciate them as an individual."],
+         "context": [""]
+        },
+        {"tag": "binabati",
+         "patterns": ["kamusta"],
+         "responses": ["Mabuti naman! Salamat sa pagtanong."],
+         "context": [""]
+        },
+        {"tag": "",
+         "patterns": [""],
+         "responses": [""],
+         "context": [""]
+      }
+    ]
+ }

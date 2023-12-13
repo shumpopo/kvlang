@@ -1,0 +1,92 @@
+MDScreen:
+    name:'Profile-screen'
+    MDFloatLayout:
+        MDIconButton:
+            icon: "chevron-left"
+            pos_hint: {'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Setting-screen"
+
+        MDTextButton:
+            text: "Back"
+            font_name: "fonts/PoppinsEL.otf"
+            font_size: "15sp"
+            pos_hint: {"center_x": .15, "center_y": .95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Home-screen"
+
+        MDLabel:
+            text: "User Profile"
+            font_name: "fonts/Poppins.otf"
+            font_size: "18sp"
+            halign: "center"
+            pos_hint: {"center_y": .95}
+            color: rgba(0, 0, 0, 255)
+
+        Image:
+            source: "assets/TCUlogo.jpg"
+            size_hint: 0.4, 0.4
+            pos_hint: {'center_x': 0.5,'center_y': 0.80}
+
+        MDBoxLayout:
+            orientation:'vertical'
+            MDBoxLayout:
+                size_hint_y:.5
+
+                MDFloatLayout:
+                    MDLabel:
+                        text: "Name"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "13sp"
+                        pos_hint: {"center_x": .55,"center_y": .65}
+                        color: rgba(0, 0, 0, 255)
+
+                    MDIcon:
+                        icon: "icons/profile.png"
+                        pos_hint: {"center_x": .17,"center_y": .61}
+
+                    MDLabel:
+                        text: "Student ID"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "13sp"
+                        pos_hint: {"center_x": .55,"center_y": .55}
+                        color: rgba(0, 0, 0, 255)
+
+                    MDIcon:
+                        icon: "icons/id.png"
+                        pos_hint: {"center_x": .17,"center_y": .51}
+
+                    MDLabel:
+                        text: "Year & Course"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "13sp"
+                        pos_hint: {"center_x": .55, "center_y": .45}
+                        color: rgba(0, 0, 0, 255)
+
+                    MDIcon:
+                        icon: "icons/course.png"
+                        pos_hint: {"center_x": .17,"center_y": .41}
+
+                    MDLabel:
+                        text: "Section"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "13sp"
+                        pos_hint: {"center_x": .55, "center_y": .35}
+                        color: rgba(0, 0, 0, 255)
+
+                    MDIcon:
+                        icon: "icons/section.png"
+                        pos_hint: {"center_x": .17,"center_y": .31}
+
+                    MDLabel:
+                        text: "Email"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "13sp"
+                        pos_hint: {"center_x": .55, "center_y": .25}
+                        color: rgba(0, 0, 0, 255)
+
+                    MDIcon:
+                        icon: "icons/email.png"
+                        pos_hint: {"center_x": .17,"center_y": .21}

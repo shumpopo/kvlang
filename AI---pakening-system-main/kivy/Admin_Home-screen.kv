@@ -1,0 +1,116 @@
+MDScreen:
+    user_list: user_list
+    name: 'Adminhome'
+    MDFloatLayout:
+
+        MDBottomNavigation:
+            #panel_color: "#000000"
+            text_color_active: "#C63D2F"
+
+            MDBottomNavigationItem:
+                name: 'screen 1'
+                text: 'Home'
+                icon: 'home'
+                badge_icon: "numeric-10"
+
+                ScrollView:
+                    size_hint_y: .9
+                    do_scroll_x: False
+                    do_scroll_y: True
+                    MDBoxLayout:
+                        id : user_list
+                        orientation: 'vertical'
+                        size: (root.width, root.height)
+                        height: self.minimum_height
+                        size_hint: None,None
+                        pos_hint: {'Top': 15}
+                        cols: 1
+                        spacing: 15
+
+                        MDBoxLayout:
+
+                MDFloatLayout:
+                    MDIcon:
+                        icon: "assets/TCUlogo.jpg"
+                        pos_hint: {'center_x': 0.1, 'center_y': 0.95}
+
+                    MDLabel:
+                        text: "Users"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        pos_hint: {'center_x': .65, 'center_y': 0.95}
+                        font_size: "18sp"
+
+            MDBottomNavigationItem:
+                name: 'screen 3'
+                text: 'Setting'
+                icon: 'cog-outline'
+
+                MDFloatLayout:
+                    Image:
+                        source: "assets/TCUlogo.jpg"
+                        size_hint: 0.5, 0.5
+                        pos_hint: {'center_x': 0.5,'center_y': 0.75}
+
+                    MDLabel:
+                        text: "TCU MISSION"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "14sp"
+                        color: rgba(255, 0, 0, 255)
+                        halign: "center"
+                        pos_hint: {'center_y': 0.57}
+
+                    MDLabel:
+                        text: '"To nurture a vibrant culture of academic wellness\nresponsive to the challenges of technology and\nthe global community."'
+                        font_name: "fonts/OpenSans-Semibold.ttf"
+                        font_size: "12sp"
+                        halign: "center"
+                        pos_hint: {'center_y': 0.5}
+
+                    MDLabel:
+                        text: "TCU VISION"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "14sp"
+                        color: rgba(255, 0, 0, 255)
+                        halign: "center"
+                        pos_hint: {'center_y': 0.41}
+
+                    MDLabel:
+                        text: '"An eminent center of excellent higher education\n towards social advancement."'
+                        font_name: "fonts/OpenSans-Semibold.ttf"
+                        font_size: "12sp"
+                        halign: "center"
+                        pos_hint: {'center_y': 0.36}
+
+                    MDLabel:
+                        text: "TCU PHILOSOPHY"
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        font_size: "14sp"
+                        color: rgba(255, 0, 0, 255)
+                        halign: "center"
+                        pos_hint: {'center_y': 0.28}
+
+                    MDLabel:
+                        text: '"Social transformation for a caring community and ecological balance country."'
+                        font_name: "fonts/OpenSans-Semibold.ttf"
+                        font_size: "12sp"
+                        halign: "center"
+                        pos_hint: {'center_y': 0.23}
+
+                MDFloatLayout:
+                    Button:
+                        text: "Logout"
+                        icon: 'logout'
+                        pos_hint: {"center_x": .5, "center_y": .05}
+                        size_hint: .9, .08
+                        background_color: 0, 0, 0, 0
+                        font_name: "fonts/OpenSans-Bold.ttf"
+                        on_release:
+                            app.admin_logout()
+                            root.manager.transition.direction = "right"
+                        canvas.before:
+                            Color:
+                                rgb: rgba(255, 0, 0, 255)
+                            RoundedRectangle:
+                                size: self.size
+                                pos: self.pos
+                                radius: [10]

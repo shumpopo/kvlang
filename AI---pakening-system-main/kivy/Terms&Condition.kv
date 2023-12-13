@@ -1,0 +1,170 @@
+MDScreen:
+    name: 'Terms'
+    MDFloatLayout:
+        MDIconButton:
+            icon: "chevron-left"
+            pos_hint: {'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Register"
+
+        MDTextButton:
+            text: "Back"
+            font_name: "fonts/PoppinsEL.otf"
+            font_size: "15sp"
+            pos_hint: {"center_x": .15, "center_y": .95}
+
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Register"
+
+        ScrollView:
+            size_hint_y: .9
+            do_scroll_x: False
+            do_scroll_y: True
+            MDBoxLayout:
+                orientation: "vertical"
+                size: (root.width, root.height)
+                height: self.minimum_height
+                size_hint: None,None
+                cols: 1
+
+                MDLabel:
+                    text: "Terms & Condition"
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    font_size: "20sp"
+                    halign: "center"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "\tPlease read these terms and conditions carefully before using this TCU Advisor operated by Taguig City University students."
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Semibold.ttf"
+                    font_size: "12sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "Conditions of use"
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    font_size: "15sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "By using this application, you certify that you have read and reviewed this Agreement and that you agree to comply with its terms. If you do not want to be bound by the terms of this Agreement, you are advised to stop using the application accordingly. TCU advisor only grants use and access of this application’s services to those who have accepted its terms."
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Semibold.ttf"
+                    font_size: "12sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "Privacy policy"
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    font_size: "15sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "Before you continue using our application, we advise you to read our privacy policy [link to privacy policy] regarding our user data collection. It will help you better understand our practices."
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Semibold.ttf"
+                    font_size: "12sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "Intellectual property"
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    font_size: "15sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "You agree that all materials and services provided on this application are the property of TCU advisor, its affiliates, directors, officers, employees, agents, suppliers, or licensors including all copyrights, trade secrets, trademarks, patents, and other intellectual property. You also agree that you will not reproduce or redistribute the [company name]’s intellectual property in any way, including electronic, digital, or new trademark registrations.\nYou grant TCU advisor a royalty-free and non-exclusive license to display, use, copy, transmit, and broadcast the content you upload and publish. For issues regarding intellectual property claims, you should contact the company in order to come to an agreement."
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Semibold.ttf"
+                    font_size: "12sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "User accounts"
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    font_size: "15sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text:"As a user of this application, you may be asked to register with us and provide private information. You are responsible for ensuring the accuracy of this information, and you are responsible for maintaining the safety and security of your identifying information. You are also responsible for all activities that occur under your account or password.\nIf you think there are any possible issues regarding the security of your account on the application, inform us immediately so we may address them accordingly.\nWe reserve all rights to terminate accounts, edit or remove content at our sole discretion."
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Semibold.ttf"
+                    font_size: "12sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "Indemnification"
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    font_size: "15sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "You agree to indemnify TCU advisor and its affiliates and hold TCU advisor harmless against legal claims and demands that may arise from your use or misuse of our services. We reserve the right to select our own legal counsel."
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Semibold.ttf"
+                    font_size: "12sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "Limitation on liability"
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    font_size: "15sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size
+
+                MDLabel:
+                    text: "TCU advisor is not liable for any damages that may occur to you as a result of your misuse of our application.\nTCU advisor reserves the right to edit, modify, and change this Agreement at any time. We shall let our users know of these changes through electronic mail. This Agreement is an understanding between TCU advisor and the user, and this supersedes and replaces all prior agreements regarding the use of this application."
+                    halign: 'justify'
+                    font_name: "fonts/OpenSans-Semibold.ttf"
+                    font_size: "12sp"
+                    padding: dp(16), dp(10)
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.size

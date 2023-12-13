@@ -1,0 +1,117 @@
+<Command>
+    size_hint_y: None
+    pos_hint: {'right': .96}
+    height: self.texture_size[1]
+    padding: 10, 10
+    theme_text_color: "Custom"
+    text_color: 1, 1, 1, 1
+    canvas.before:
+        Color:
+            rgba: (250, 112/255, 112/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height
+            pos: self.pos
+            radius: [25, 25, 0, 25]
+
+<Response>
+    size_hint_y: None
+    pos_hint: {"x": .14}
+    height: self.texture_size[1]
+    padding: 10, 10
+    canvas.before:
+        Color:
+            rgba: (255, 217/255, 141/255, .8)
+        RoundedRectangle:
+            size: self.width, self.height
+            pos: self.pos
+            radius: [30, 30, 30, 0]
+
+    MDFloatLayout:
+        MDIcon:
+            icon: "assets/TCUlogo.jpg"
+            pos_hint: {'center_x': 0.28, 'center_y': 0.1}
+            canvas.before:
+                RoundedRectangle:
+                    pos: self.pos
+
+MDScreen:
+    text_input: text_input
+    chat_list: chat_list
+    name: "Academic_message-screen"
+
+    canvas.before:
+        Rectangle:
+            size: self.size
+
+    MDFloatLayout:
+        MDIconButton:
+            icon: "chevron-left"
+            pos_hint: {'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Home-screen"
+
+
+
+        MDFloatLayout:
+            MDIcon:
+                icon: "library"
+                pos_hint: {'center_x': 0.15, 'center_y': 0.95}
+
+        MDLabel:
+            text: "A C A D E M I C"
+            font_name: "fonts/Poppins.otf"
+            font_size: "15sp"
+            pos_hint: {"center_x": .70, "center_y": .95}
+
+        ScrollView:
+            size_hint_y: .8
+            pos_hint: {"y": .1}
+            do_scroll_x: False
+            do_scroll_y: True
+
+            BoxLayout:
+                id: chat_list
+                orientation: 'vertical'
+                size: (root.width, root.height)
+                height: self.minimum_height
+                size_hint: None, None
+                pos_hint: {'Top': 10}
+                cols: 1
+                spacing: 5
+
+        MDFloatLayout:
+            size_hint: .85, .06
+            pos_hint: {'center_x': .44,'center_y': .04}
+            canvas:
+                Color:
+                    rgba: 1,1,1,1
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [20, 20, 20, 20]
+
+            TextInput:
+                id: text_input
+                hint_text : "Message . . ."
+                size_hint: .87, None
+                pos_hint: {"center_x": .45, "center_y": .5}
+                font_size: "14sp"
+                font_name: "fonts/PoppinsEL.otf"
+                height: self.minimum_height
+                multiline: False
+                cursor_color: 58, 77/255, 57/255, 1
+                cursor_width: "2sp"
+                background_color: 0,0,0,0
+
+        MDIconButton:
+            icon: "send"
+            pos_hint: {"center_x": .93, "center_y": .04}
+            on_release: app.send_academic()
+
+        MDIconButton:
+            id: recognizer
+            icon: "microphone"
+            pos_hint: {"center_x": .8,'center_y': .04}
+            on_press:
+                app.command_academic()

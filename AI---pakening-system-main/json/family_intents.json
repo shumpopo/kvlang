@@ -1,0 +1,568 @@
+{
+ "intents": [
+  {
+   "tag": "greeting",
+   "patterns": [
+    "Hi there",
+    "How are you",
+    "Is anyone there?",
+    "Hey",
+    "Hola",
+    "Hello",
+    "Good day",
+    "Hi"
+   ],
+   "responses": [
+    "Hello",
+    "Good to see you again",
+    "Hi there, how can I help?"
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "goodbye",
+   "patterns": [
+    "Bye",
+    "See you later",
+    "Goodbye",
+    "Nice chatting to you, bye",
+    "Till next time"
+   ],
+   "responses": [
+    "See you!",
+    "Have a nice day",
+    "Bye! Come back again soon."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "thanks",
+   "patterns": [
+    "Thanks",
+    "Thank you",
+    "That's helpful",
+    "Awesome, thanks",
+    "Thanks for helping me"
+   ],
+   "responses": [
+    "My pleasure",
+    "You're Welcome"
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "name",
+   "patterns": [
+    "what is your name",
+    "what should I call you",
+    "whats your name?"
+   ],
+   "responses": [
+    "You can call me Saviour.",
+    "I'm Saviour!",
+    "I'm Saviour, here to help you!"
+   ],
+   "context_set": ""
+  },
+  {
+   "tag": "crucial",
+   "patterns": [
+    "I want to kill",
+    "i want to suicide",
+    " i have a depression",
+    "i want to die",
+    "dead"
+   ],
+   "responses": [
+    "This is a crucial topic! please contact TCU counseling office for the guidance dial #8635-8300"
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "broken",
+   "patterns": [
+    "doesn`t love me",
+    "didn’t love me",
+    "didn`t have feelings for me.",
+    "didn`t feel love for me.",
+    "didn`t love me."
+   ],
+   "responses": [
+    "I understand. It is very painful to learn that a partner no longer loves you. It is important to allow yourself time to grieve and to process your emotions. There is no right or wrong way to feel, and it is normal to experience a range of emotions, such as sadness, anger, confusion, and loneliness."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "communication",
+   "patterns": [
+    "doesn't talk to me",
+    "don't talk to me"
+   ],
+   "responses": [
+    "Take the first step to initiate a conversation. Choose a calm and appropriate time to talk to your parents. Express your feelings and let them know that you would like to understand what might be going on."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "communication2",
+   "patterns": [
+    "doesn't interact with me",
+    "don't interact with me"
+   ],
+   "responses": [
+    "Clearly communicate how their silence is affecting you emotionally. Share your perspective and let them know that you value your relationship with them and want to work through any issues that may be causing tension."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "communication3",
+   "patterns": [
+    "dont know how to approach my family",
+    "dont know to share problems"
+   ],
+   "responses": [
+    "If your problems are complex, consider suggesting the involvement of a professional, such as a family therapist, to facilitate communication and provide guidance."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "hatred",
+   "patterns": [
+    " hate me",
+    "hates  me"
+   ],
+   "responses": [
+    "Don't hesitate to reach out to friends, family, or professionals for support when you're facing challenges. Sharing your feelings can be a relief, and others may offer valuable perspectives."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "betrayal",
+   "patterns": [
+    "betrayed me",
+    "betray",
+    "betrays"
+   ],
+   "responses": [
+    "If you feel comfortable, consider having an open and honest conversation with the family member who betrayed your trust. Clearly express how their actions affected you and why you feel betrayed."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "hatred2",
+   "patterns": [
+    "i hate my family"
+   ],
+   "responses": [
+    "Reflect on why you're feeling this way. Are there specific incidents or patterns of behavior that have led to these emotions? Understanding the root causes can be a crucial first step."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "betrayal2",
+   "patterns": [
+    "broke my trust",
+    "lose my trust"
+   ],
+   "responses": [
+    "Depending on the situation, you may need to establish clear boundaries to protect yourself from further harm. Consider what boundaries are necessary for you to feel safe and respected."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "finance",
+   "patterns": [
+    "financial problem",
+    "financial crisis"
+   ],
+   "responses": [
+    "Consider exploring additional sources of income, such as part-time work, freelancing, or other opportunities. This can help ease financial strain."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "separation",
+   "patterns": [
+    "separation",
+    "separate",
+    "divorce"
+   ],
+   "responses": [
+    "Try to keep a sense of normalcy in your life by maintaining your regular routines. Consistency can provide a sense of stability during a period of change."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "bully",
+   "patterns": [
+    "bully",
+    "bullies",
+    "bullying",
+    "bullied"
+   ],
+   "responses": [
+    "Reach out to a trusted adult, such as a parent, teacher, or counselor, and share your experiences. They can provide guidance and support, and in some cases, intervene to address the situation."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "fight",
+   "patterns": [
+    "fight",
+    "argue",
+    "argument",
+    "conflict"
+   ],
+   "responses": [
+    "If emotions are running high, it's often helpful to take a step back and allow some time for both parties to cool off. This can prevent further escalation and allow everyone involved to think more clearly."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "care",
+   "patterns": [
+    "don't care",
+    "doesn't care",
+    "lacks support"
+   ],
+   "responses": [
+    "When you feel ready, have an open and honest conversation with your family members about your feelings. Share specific examples, express how you feel, and let them know that you would like to feel more supported and connected."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "",
+   "patterns": [
+    "bond",
+    "closeness"
+   ],
+   "responses": [
+    "Allocate time for family activities or gatherings. Quality time spent together, whether it's a meal, outing, or shared hobby, can contribute to building stronger bonds."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "betrayal3",
+   "patterns": [
+    "affair",
+    "third party",
+    "3rd party",
+    "mistress"
+   ],
+   "responses": [
+    "Consider what level of involvement you want or need in your parents' relationship issues. You have the right to set boundaries that prioritize your own well-being."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "greeting",
+   "patterns": [
+    "Kamusta diyan",
+    "Kumusta ka na",
+    "hoy!",
+    "oy",
+    "Hola",
+    "Hello",
+    "Magandang araw",
+    "Hi"
+   ],
+   "responses": [
+    "Kumusta",
+    "masaya akong makita ka ulit",
+    "Hi diyan, paano kita matutulungan?"
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "goodbye",
+   "patterns": [
+    " Paalam",
+    "Sa muling pagkikita",
+    "Paalam",
+    "Nakakatuwa ang makipag-usap sa'yo, paalam",
+    "Hanggang sa susunod na pagkakataon"
+   ],
+   "responses": [
+    "Sa muling pagkikita!",
+    "Magandang araw sa'yo",
+    "Magandang araw sa'yo",
+    "Paalam! Balik ka ulit"
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "thanks",
+   "patterns": [
+    "Salamat",
+    "Salamat",
+    "Nakakatulong iyan",
+    "Astig, salamat",
+    "Salamat sa tulong mo"
+   ],
+   "responses": [
+    "Walang anuman"
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "name",
+   "patterns": [
+    "anong pangalan mo?",
+    "anong itatawag ko sayo?",
+    "sino ka?"
+   ],
+   "responses": [
+    "Tawagin mo akong Saviour.",
+    "Ako si Saviour!",
+    "Ako si Saviour, tutulungan ka!"
+   ],
+   "context_set": ""
+  },
+  {
+   "tag": "crucial",
+   "patterns": [
+    "Gusto ko pumatay",
+    "Gusto ko magpakamatay",
+    "Depressed ako",
+    "Gusto ko na mamatay",
+    "patay"
+   ],
+   "responses": [
+    "Ito ay isang mahalagang paksa! Maari mong kontakin ang TCU counseling office para sa gabay sa numerong #8635-8300."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "komunikasyon",
+   "patterns": [
+    "Hindi nagsasalita sa akin,",
+    "Huwag mo akong kausapin."
+   ],
+   "responses": [
+    "Gawin ang unang hakbang upang simulan ang isang usapan. Pumili ng tahimik at angkop na oras para makipag-usap sa iyong mga magulang. Ipahayag ang iyong nararamdaman at ipaalam sa kanila na gusto mong malaman kung ano ang maaaring nangyayari."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "communication2",
+   "patterns": [
+    "Hindi nakikipag-ugnayan sa akin,",
+    "Huwag kang makipag-ugnayan sa akin."
+   ],
+   "responses": [
+    "Malinaw na iparating kung paano nakakaapekto sa iyo emosyonal ang kanilang katahimikan. Ibahagi ang iyong pananaw at ipaalam sa kanila na pinahahalagahan mo ang iyong ugnayan sa kanila at nais mong malampasan ang anumang isyu na maaaring nagdudulot ng tensyon."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "komunikasyon3",
+   "patterns": [
+    "Hindi ko alam kung paano lapitan ang aking pamilya"
+   ],
+   "responses": [
+    "Kung ang iyong mga problema ay komplikado, isipin ang pagmumungkahi ng pagtanggap ng tulong mula sa propesyonal tulad ng isang pamilya therapist, upang mapadali ang komunikasyon at magbigay ng gabay."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "galit",
+   "patterns": [
+    " Hindi ako gusto",
+    "ayaw sa akin"
+   ],
+   "responses": [
+    "Huwag kang mag-atubiling lumapit sa mga kaibigan, pamilya, o propesyonal para sa suporta kapag ikaw ay may hinaharap na mga hamon. Ang pagbabahagi ng iyong nararamdaman ay maaaring magbigay ginhawa, at ang iba ay maaaring magbigay ng mahahalagang pananaw."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "niloko",
+   "patterns": [
+    "niloko ako",
+    "niloko",
+    "betrays"
+   ],
+   "responses": [
+    "Kung nararamdaman mo na komportable, isaalang-alang ang pagkakaroon ng bukas at tapat na usapan sa pamilyang nagkasala sa iyong tiwala. Ipakita ng malinaw kung paano nakaaapekto sa iyo ang kanilang mga kilos at bakit nararamdaman mong ikaw ay na-betray."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "niloko2",
+   "patterns": [
+    "Kinaiinisan ko ang aking pamilya."
+   ],
+   "responses": [
+    "Magmuni-muni ka kung bakit nararamdaman mo ito. Mayroon bang partikular na mga pangyayari o padrino ng kilos na nagdulot ng ganitong emosyon? Ang pag-unawa sa mga dahilan nito ay maaaring maging mahalagang unang hakbang."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "niloko3",
+   "patterns": [
+    "broke my trust",
+    "Nawala ang tiwala ko."
+   ],
+   "responses": [
+    "Depende sa sitwasyon, maaaring kailangan mong itakda ang malinaw na mga hangganan upang mapanatili ang iyong sarili mula sa karagdagang pinsala. Isalang-alang kung ano ang mga hangganan na kinakailangan mo para sa iyong pakiramdam ng kaligtasan at paggalang."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "pinansyal",
+   "patterns": [
+    "pinansyal problem",
+    "Krisis sa Pananalapi"
+   ],
+   "responses": [
+    "Isalang-alang ang pag-explore ng karagdagang pinagkakakitaan tulad ng part-time na trabaho, freelancing, o iba pang oportunidad. Ito ay makakatulong upang gumaan ang iyong pasanin sa pananalapi."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "Paghihiwalay",
+   "patterns": [
+    "Paghihiwalay,",
+    "Hiwalay,",
+    "Diborsyo"
+   ],
+   "responses": [
+    "Subukan panatilihin ang pangkaraniwang takbo ng iyong buhay sa pamamagitan ng pagpapanatili sa iyong mga karaniwang gawain. Ang regular na pagganap ay maaaring magbigay ng pakiramdam ng katiyakan sa panahon ng pagbabago."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "bully",
+   "patterns": [
+    "Mapanakit",
+    "bullies",
+    "pang-aapi",
+    "Inaapi"
+   ],
+   "responses": [
+    "Lumapit sa isang tiwalaang adulto tulad ng magulang, guro, o tagapayo, at ibahagi ang iyong mga karanasan. Maari nilang magbigay ng gabay at suporta, at sa ilalim ng ilang mga kaso, maari rin silang sumali sa pagtugon sa sitwasyon."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "Laban",
+   "patterns": [
+    "Laban",
+    "Mag-away",
+    "Argumento",
+    "Labanang-digmaan"
+   ],
+   "responses": [
+    "Kapag mataas ang damdamin, madalas na nakakatulong ang pagbigay ng kaunting oras para sa parehong panig na magpalamig. Ito ay makakatulong sa pag-iwas ng mas matinding pag-escalate at magbibigay daan para sa mas mabuting pag-iisip ng lahat ng sangkot."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "Malasakit",
+   "patterns": [
+    "Hindi nag-aalala,",
+    "Hindi nagmamalasakit,",
+    "Walang suporta"
+   ],
+   "responses": [
+    "Kapag nararamdaman mo nang handa ka na, magkaruon ng bukas at tapat na usapan sa iyong mga pamilya ukol sa iyong nararamdaman. Ibahagi ang mga partikular na halimbawa, ipahayag kung paano mo nararamdaman, at ipaalam sa kanila na nais mong magkaruon ng mas maraming suporta at koneksyon."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "bonding",
+   "patterns": [
+    "Ugnayan",
+    "closeness"
+   ],
+   "responses": [
+    "Ilaan ang oras para sa pamilyang mga gawain o pagtitipon. Ang magkasamang oras na may kalidad, maging ito man ay sa pagkain, paglalakbay, o pagsasaluhan ng hilig, ay makakatulong sa pagbuo ng mas matibay na ugnayan."
+   ],
+   "context": [
+    ""
+   ]
+  },
+  {
+   "tag": "kabit",
+   "patterns": [
+    "kasalanan party",
+    "3rd party",
+    "kabit"
+   ],
+   "responses": [
+    "Isalang-alang kung gaano karaming pakikisangkot ang nais o kailangan mo sa mga isyu sa relasyon ng iyong mga magulang. May karapatan ka na magtakda ng mga hangganan na nagbibigay-prioridad sa iyong sariling kalagayan at kagalingan."
+   ],
+   "context": [""]
+  }
+ ]
+}

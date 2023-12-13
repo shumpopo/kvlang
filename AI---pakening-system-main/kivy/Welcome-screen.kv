@@ -1,0 +1,96 @@
+MDScreen:
+    name: "Welcome-screen"
+    MDFloatLayout:
+        md_bg_color: 0/255, 0/255, 0/255, 0
+        Carousel:
+            id: carousel
+            on_current_slide: app.current_slide(self.index)
+            MDFloatLayout:
+                MDLabel:
+                    text: "W E L C O M E !"
+                    font_name: "fonts/Poppins.otf"
+                    font_size: "30sp"
+                    pos_hint: {"center_x": .6, "center_y": .85}
+                MDLabel:
+                    text: "T C U n i s t a ."
+                    font_name: "fonts/Poppins.otf"
+                    font_size: "20sp"
+                    pos_hint: {"center_x": .6, "center_y": .80}
+                    color: rgba(255, 0, 0, 255)
+
+                Image:
+                    source: "assets/logo.png"
+                    size_hint: .8, .8
+                    pos_hint: {'center_x': 0.5,'center_y': 0.6}
+
+                MDLabel:
+                    text: "This AI is designed to assist and advice."
+                    font_name: "fonts/PoppinsEL.otf"
+                    font_size: "12sp"
+                    pos_hint: {"center_y": .25}
+                    halign: "center"
+
+                MDLabel:
+                    text: "Your Personal Advisor."
+                    font_name: "fonts/PoppinsEL.otf"
+                    font_size: "12sp"
+                    pos_hint: {"center_y": .20}
+                    halign: "center"
+
+            MDFloatLayout:
+                MDLabel:
+                    text: "H I  T H E R E ! ,"
+                    font_name: "fonts/Poppins.otf"
+                    font_size: "30sp"
+                    pos_hint: {"center_x": .6, "center_y": .85}
+
+                MDLabel:
+                    text: "T C U n i s t a ."
+                    font_name: "fonts/Poppins.otf"
+                    font_size: "20sp"
+                    pos_hint: {"center_x": .6, "center_y": .80}
+                    color: rgba(255, 0, 0, 255)
+
+                Image:
+                    source: "assets/TCUlogo.jpg"
+                    size_hint: 0.6, 0.6
+                    pos_hint: {'center_x': 0.5,'center_y': 0.6}
+
+                MDLabel:
+                    text: "Take control of your mental well being\nwith\nour dedicated mental health app"
+                    font_name: "fonts/PoppinsEL.otf"
+                    font_size: "12sp"
+                    pos_hint: {"center_y": .30}
+                    halign: "center"
+
+
+                Button:
+                    text: "Let's get started"
+                    size_hint: .5, .06
+                    pos_hint: {"center_x": .5, "center_y": .10}
+                    background_color: 0, 0, 0, 0
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    on_release:
+                        root.manager.transition.direction = "left"
+                        root.manager.current = "Home-screen"
+                    canvas.before:
+                        Color:
+                            rgb: rgba(255, 0, 0, 255)
+                        RoundedRectangle:
+                            size: self.size
+                            pos: self.pos
+                            radius: [20]
+
+        MDLabel:
+            id: slide0
+            text:"."
+            color: rgba(253, 0, 0, 255)
+            pos_hint: {"center_x": .97, "center_y": .08}
+            font_size: "80sp"
+
+        MDLabel:
+            id: slide1
+            text:"."
+            color: rgba(170, 170, 170, 255)
+            pos_hint: {"center_x": 1.03, "center_y": .08}
+            font_size: "80sp"

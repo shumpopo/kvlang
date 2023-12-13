@@ -1,0 +1,66 @@
+MDScreen:
+    name: 'Love_command'
+    MDFloatLayout:
+        MDIconButton:
+            icon: "chevron-left"
+            pos_hint: {'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Adminhome"
+
+        MDLabel:
+            text: "Command"
+            font_name: "fonts/OpenSans-Bold.ttf"
+            pos_hint: {'center_x': .63, 'center_y': 0.95}
+            font_size: "18sp"
+
+        MDIcon:
+            icon: 'heart'
+            pos_hint: {'center_x': .5, 'center_y': 0.85}
+
+        MDLabel:
+            text: "L O V E"
+            font_name: "fonts/OpenSans-Bold.ttf"
+            pos_hint: {'center_y': 0.8}
+            halign: "center"
+            font_size: "18sp"
+
+    MDFloatLayout:
+        size_hint: .8, None
+        pos_hint: {"center_x": .5, "center_y": .70}
+        MDTextField:
+            hint_text: "Tag"
+            mode: "rectangle"
+            helper_text: "required*"
+            font_size: "14sp"
+            font_name: "fonts/OpenSans-Bold.ttf"
+            pos_hint: {'center_x': .5, 'center_y': 0.5}
+
+    MDFloatLayout:
+        size_hint: .8, None
+        pos_hint: {"center_x": .5, "center_y": .58}
+        MDTextField:
+            hint_text: "User command"
+            mode: "fill"
+            helper_text: "required*"
+            font_size: "14sp"
+            font_name: "fonts/OpenSans-Bold.ttf"
+            pos_hint: {'center_x': .5, 'center_y': 0.5}
+
+    MDFloatLayout:
+        size_hint: .8, None
+        pos_hint: {"center_x": .5, "center_y": .35}
+        MDTextField:
+            hint_text: "AI new response"
+            mode: "fill"
+            helper_text: "required*"
+            font_size: "14sp"
+            font_name: "fonts/OpenSans-Semibold.ttf"
+            pos_hint: {'center_x': .5, 'center_y': 0.5}
+            size_hint_y: 2
+            multiline: True
+
+    MDFloatLayout:
+        MDIconButton:
+            icon: 'send'
+            pos_hint: {'center_x': .85, 'center_y': 0.15}

@@ -1,0 +1,211 @@
+MDScreen:
+    name: 'Setting-screen'
+
+    MDFloatLayout:
+        MDIconButton:
+            icon: "chevron-left"
+            pos_hint: {'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Home-screen"
+
+        MDTextButton:
+            text: "Back"
+            font_name: "fonts/PoppinsEL.otf"
+            font_size: "15sp"
+            pos_hint: {"center_x": .15, "center_y": .95}
+
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Home-screen"
+
+        MDLabel:
+            text: "Settings"
+            font_name: "fonts/Poppins.otf"
+            font_size: "18sp"
+            halign: "center"
+            pos_hint: {"center_y": .95}
+
+        MDFloatLayout:
+            size_hint: .9, .1
+            radius: [10]
+            pos_hint: {'center_x': 0.5,'center_y': 0.85}
+            Image:
+                source: "assets/TCUlogo.jpg"
+                size_hint: 0.7, 0.7
+                pos_hint: {'center_x': 0.1,'center_y': 0.5}
+
+            MDTextButton:
+                text: "View Profile"
+                font_size: "12sp"
+                pos_hint: {"center_x": .35,"center_y": .4}
+                on_release:
+                    root.manager.transition.direction = "left"
+                    root.manager.current = "Profile-screen"
+
+            MDIconButton:
+                icon: "chevron-right"
+                pos_hint: {'center_x': 0.95,'center_y': 0.5}
+                on_release:
+                    root.manager.transition.direction = "left"
+                    root.manager.current = "Profile-screen"
+
+        MDFloatLayout:
+            size_hint: .9, .1
+            radius: [10]
+            pos_hint: {'center_x': 0.5,'center_y': 0.74}
+
+            MDTextButton:
+                text: "Terms & Condition"
+                font_name: "fonts/OpenSans-Bold.ttf"
+                font_size: "12sp"
+                pos_hint: {"center_x": .25, "center_y": .5}
+                on_release:
+                    root.manager.transition.direction = "left"
+                    root.manager.current = "Terms1"
+
+
+        MDFloatLayout:
+            size_hint: .9, .1
+            radius: [10]
+            pos_hint: {'center_x': 0.5,'center_y': 0.63}
+
+            MDTextButton:
+                text: "About us"
+                font_size: "12sp"
+                font_name: "fonts/OpenSans-Semibold.ttf"
+                pos_hint: {"center_x": .15,"center_y": .5}
+                on_release:
+                    root.manager.transition.direction = "left"
+                    root.manager.current = "About"
+
+        Button:
+            text: "Logout"
+            size_hint: .8, .06
+            pos_hint: {"center_x": .5, "center_y": .53}
+            background_color: 0, 0, 0, 0
+            font_name: "fonts/OpenSans-Bold.ttf"
+            on_release:
+                app.user_logout()
+            canvas.before:
+                Color:
+                    rgb: rgba(255, 0, 0, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [10]
+
+    MDBoxLayout:
+        Carousel:
+            id: carousel_1
+            size_hint: .5, .2
+            pos_hint: {"center_y": .2}
+            MDFloatLayout:
+                MDLabel:
+                    text: '"You don’t have to control your thoughts.\nYou just have to stop letting them control you." \n\n                                                         ~ Dan Millman'
+                    halign: "center"
+                    font_size: "12sp"
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    color: rgba(135, 135, 135, 255)
+            MDFloatLayout:
+                MDLabel:
+                    text: '"Mental health problems don’t define who you are.\nThey are something you experience.\nYou walk in the rain and you feel the rain,\n but you are not the rain." \n\n                                                       ~ Matt Haig'
+                    halign: "center"
+                    font_size: "12sp"
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    color: rgba(135, 135, 135, 255)
+            MDFloatLayout:
+                MDLabel:
+                    text: '"Slow, deep breathing is important…\nIt’s like an anchor in the midst of an emotional storm:\nthe anchor won’t get rid of the storm,\nbut it will hold you steady until it passes."\n\n                                                    ~ Russ Harris'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+            MDFloatLayout:
+                MDLabel:
+                    text: '“There is a crack in everything,\nthat’s how the light gets in” \n\n                           ~ Leonard Cohen'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+            MDFloatLayout:
+                MDLabel:
+                    text:'“If you can’t fly, run. If you can’t run, walk.\n If you can’t walk, crawl, but by all means,\n keep moving.” \n\n                                ~ Martin Luther King, Jr.'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text:'"Mental health is not a destination, but a process.\nIt’s about how you drive, not where you’re going."\n\n                                ~ Noam Shpancer, PhD'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '"You don’t have to be positive all the time.\nIt’s perfectly okay to feel sad, angry,\nannoyed, frustrated, scared, and anxious.\nHaving feelings doesn’t make you a negative person.\nIt makes you human." \n\n                                         ~ Lori Deschene'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '"Nobody can save you but yourself,\nand you’re worth saving.\nIt’s a war not easily won,\nbut if anything is worth winning then this is it." /n/n                        ~ Charles Bukowski'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '"Being able to be your true self is\nOne of the strongest components of good mental health."\n\n                                     ~ Lauren Fogel Mersy'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '“You are not alone. You are seen.\nI am with you. You are not alone.”\n\n                              ~ Shonda Rhimes'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '“There is hope,\neven when your brain tells you there isn’t.”\n\n                                              ~ John Green'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '“Just remember, you are not alone, in fact,\nyou are in a very commonplace with millions of others.\nWe need to help each other\nand\nkeep striving to reach our goals.” \n\n                                                 ~ Mike Moreno'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '“Sometimes the people around you\nwon’t understand your journey.\nThey don’t need to, it’s not for them.” \n\n                                              ~ Joubert Botha'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+
+            MDFloatLayout:
+                MDLabel:
+                    text: '"You are more precious to this world\nthan you’ll ever know" \n\n                                   ~ Lil Rhinehart'
+                    font_name: "fonts/OpenSans-Italic.ttf"
+                    halign: "center"
+                    font_size: "12sp"
+                    color: rgba(135, 135, 135, 255)
+

@@ -1,0 +1,83 @@
+MDScreen:
+    name: "Home-screen"
+	MDFloatLayout:
+
+	    MDIcon:
+            icon: "assets/TCUlogo.jpg"
+            pos_hint: {'center_x': 0.1, 'center_y': 0.95}
+        Image:
+            source: "assets/TCUlogo.jpg"
+            size_hint: 0.5, 0.5
+            pos_hint: {'center_x': 0.5,'center_y': 0.75}
+        MDIconButton:
+            icon: "bell"
+            pos_hint: {"center_x": .8,'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Notification-screen"
+
+        MDIconButton:
+            icon: "cog-outline"
+            pos_hint: {"center_x": .9,'center_y': 0.95}
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Setting-screen"
+
+        MDLabel:
+            text: "H O M E"
+            font_name: "fonts/Poppins.otf"
+            font_size: "18sp"
+            pos_hint: {"center_x": .65, "center_y": .95}
+
+    MDBoxLayout:
+        Carousel:
+            size_hint: .5, .12
+
+            MDFloatLayout:
+                size_hint_x: .8
+
+                MDLabel:
+                    text: "Love"
+                    font_size: "12sp"
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    pos_hint: {"center_x": .6,'center_y': 0.85}
+                    color: rgba(135, 135, 135, 255)
+
+                MDIconButton:
+                    icon: "heart"
+                    pos_hint: {"center_x": .15,'center_y': 0.4}
+                    on_release:
+                        root.manager.transition.direction = "left"
+                        root.manager.current = "Love_message-screen"
+
+                MDLabel:
+                    text: "Academic"
+                    font_size: "12sp"
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    pos_hint: {"center_x": .77,'center_y': 0.85}
+                    color: rgba(135, 135, 135, 255)
+
+                MDIconButton:
+                    icon: "library"
+                    pos_hint: {"center_x": .38,'center_y': 0.4}
+                    on_release:
+                        root.manager.transition.direction = "left"
+                        root.manager.current = "Academic_message-screen"
+
+                MDLabel:
+                    text: "Family"
+                    font_size: "12sp"
+                    font_name: "fonts/OpenSans-Bold.ttf"
+                    pos_hint: {"center_x": 1.05,'center_y': 0.85}
+                    color: rgba(135, 135, 135, 255)
+
+                MDIconButton:
+                    icon: "human-male-female-child"
+                    pos_hint: {"center_x": .62,'center_y': 0.4}
+                    on_release:
+                        root.manager.transition.direction = "left"
+                        root.manager.current = "Family_message-screen"
+
+            MDFloatLayout:
+                size_hint_x: .2
+                pos_hint: {"center_x": .9}
